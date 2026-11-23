@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "日语朗读",
+  "version": "1.0.0",
+  "description": "选中文字，右键用本机日语语音朗读。",
+  "minimum_chrome_version": "101",
+  "permissions": ["contextMenus", "tts"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "日语朗读", "default_popup": "popup.html" }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>日语朗读</title>
+    <link rel="stylesheet" href="popup.css">
+    <script type="module" src="popup.js"></script>
+  </head>
+  <body>
+    <main>
+      <header><span class="mark" lang="ja" aria-hidden="true">あ</span><span class="tag">日本語 · JA</span></header>
+      <h1>让日语，读出来。</h1>
+      <p class="intro">选中一段文字，听见它的发音。</p>
+      <ol><li>在网页中选中日语文字</li><li>右键 →「用日语朗读选中文字」</li></ol>
+      <section aria-label="语音状态">
+        <p id="voice" role="status">正在检查日语语音…</p>
+        <p id="error" role="alert" hidden></p>
+        <p id="help" hidden>在系统设置中下载日语语音，然后重启浏览器。macOS：搜索“朗读与语音”；Windows：搜索“语音设置”。</p>
+      </section>
+      <button id="stop" type="button">停止朗读</button>
+      <p class="footer" id="feedback" role="status">仅使用本机语音 · 不保存选中文字</p>
+    </main>
+  </body>
+</html>
